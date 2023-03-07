@@ -1,0 +1,96 @@
+.main-banner h1, .products-section h2{
+  font-family: 'Merienda One', cursive;
+}
+.main-banner p, .contact-section p{ 
+  font-family: 'ABeeZee', sans-serif;
+}
+/*Banner section*/
+.main-banner .middle-banner-content {
+  height: 0;
+  border-top: 130px solid rgb(255, 255, 255, 0.8);
+  border-bottom: 130px solid rgb(255, 255, 255, 0.8);
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+  z-index: 999;
+  position: relative;
+  top: 5em;
+}
+.middle-banner-content .wp-block-group__inner-container.block-editor-block-list__layout {
+  margin: -7em auto;
+  padding: 30px;
+}
+/*Contact section*/
+.contact-section{
+  top: 6em;
+}
+.contact-section .wp-block-cover {
+  min-height: 150px;
+}
+.has-background-dim.has-white-background-color.wp-block-cover.block-editor-block-list__block.wp-block, .has-background-dim.wp-block-cover.block-editor-block-list__block.wp-block{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.wp-block-columns.contact-section.block-editor-block-list__block.block-editor-block-list__layout {
+  border: 1px solid #eee;
+}
+.wp-block-column.contact-timing {
+  font-weight: bold;
+}
+.wp-block-column.contact-call, .wp-block-column.contact-email{
+  border-right: solid 1px #eeeeee;
+}
+.contact-section .block-editor-rich-text__editable.wp-block-button__link {
+  padding: 10px 15px;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'ABeeZee', sans-serif;
+  text-decoration: none;
+}
+p.has-text-align-left.text-left.has-text-color {
+  font-size: 20px;
+  font-family: 'Merienda One', cursive;
+}
+.wp-block-column.contact-timing p{
+  color: #fff !important;
+}
+.contact-section .block-editor-rich-text__editable.wp-block-button__link:hover{
+  background-color: #52d1cd !important;
+}
+/*product section*/
+.products-section {
+  margin: 0 auto !important;
+  max-width: 1140px !important; 
+  padding-top: 6em;
+}
+.wp-block-cover.has-background-dim:not(.has-background-gradient):before{
+  opacity: 0;
+}
+.editor-styles-wrapper .wc-block-grid__product-title, .wc-block-grid__product-title {
+  color: #4d4749 !important;
+  font-size: 16px;
+  font-family: 'Merienda One', cursive;
+  text-decoration: none;
+}
+.products-section a.wc-block-grid__product-link{
+  text-decoration: none;
+}
+.wc-block-grid__product-onsale {
+  display: none;
+}
+.wc-block-grid__product .wc-block-grid__product-price{
+  margin: 0 auto 0px;
+}
+span.woocommerce-Price-amount.amount {
+  color: #52d1cd;
+  font-weight: 700;
+}
+a.wp-block-button__link.add_to_cart_button {
+  text-decoration: none;
+  font-family: 'Merienda One', cursive;
+  font-style: normal;
+  text-transform: none;
+  background-color: transparent;
+  color: #4d4749;
+}

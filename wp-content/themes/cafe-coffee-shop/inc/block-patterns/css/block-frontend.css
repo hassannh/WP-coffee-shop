@@ -1,0 +1,82 @@
+.banner-section, .article-outer-box{
+  width: auto;
+  height: auto;
+}
+/*Banner section*/
+.banner-section {
+  background: #000;
+}
+.banner-section img {
+  opacity: 0.5;
+}
+.banner-section h4{
+  font-size: 15px;
+  letter-spacing: 10px;
+  color: #999999 !important;
+  font-family: 'Poppins', sans-serif;
+}
+.banner-section h1{
+  letter-spacing: 1px;
+  color: #ffffff !important;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+}
+/*Article section*/
+.article-outer-box {
+  margin: 0 auto !important;
+  max-width: 1000px !important; 
+  margin-top: 25px !important;
+}
+.article-outer-box h3{
+  font-size: 15px;
+  letter-spacing: 10px;
+  color: #999999 !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin: 0 0 14px;
+}
+.article-outer-box h2{
+  text-align: left;
+  text-transform: none;
+  font-size: 35px;
+  font-weight: bold;
+}
+.article-outer-box p {
+  font-size: 15px;
+  line-height: 2;
+}
+.article-outer-box .service-btn a.wp-block-button__link {
+  border: solid 2px #000 !important;
+  padding: 15px 20px;
+  color: #000 !important;
+  font-size: 14px !important;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+}
+.article-outer-box .service-btn a.wp-block-button__link:hover {
+  background: #b89d64 !important;
+  border-color: #b89d64 !important;
+  color: #fff !important;
+}
+.article-outer-box .wp-block-buttons.alignleft, .article-outer-box figure.alignright.size-large{
+  border: none !important;
+}
+@media screen and ( max-width: 781px ) and ( min-width: 600px ) {
+  .banner-section .wp-block-column.is-vertically-aligned-center:nth-child(2){
+    flex-basis: 100%!important;
+  }
+}
+@media screen and (max-width:1000px) {
+  .banner-section .wp-block-column.is-vertically-aligned-center{
+    margin: 5px !important;
+  }
+  .banner-section h1 {
+    font-size: 30px !important;
+  }
+  .alignwide.article-outer-box, .alignwide.article-container {
+    margin: 0 !important;
+  }
+}

@@ -1,0 +1,811 @@
+/*
+Theme Name: Cafe Coffee Shop
+Theme URI: https://www.vwthemes.com/themes/free-cafe-wordpress-theme/
+Author: VWthemes
+Author URI: https://www.vwthemes.com
+Description: Cafe Coffee Shop is a wonderfully designed theme for cafeteria and coffee shops. It is multipurpose and serves well for restaurants, eateries, and bistros as well. It has a professional look and its design is intuitive and enticing as it has been carved by expert developers. The clean and sophisticated look of this theme will give you an awesome website that will drive people towards your cafe or restaurant. Its perfect for businesses like food providers, suppliers, Coffee Kiosk, Coffee Roaster, cooking compititions, fast foods, cafes, pizzerias, burger, dishes, meal, reservation, Thematic Coffee Shops, Cloud Kitchen, Fine dining, soda corner, cantien, Flafel cart, Doughnut Shop, sushi joint, barbecues, cuisine, Italian food joint, candy shop, juice counter, sandwitch corner, catering, bakery shop, organic healthy food, baked food, snack shop, diner, recipe, chef, beans, eat, pizza delivery, Food & Drink, hotel, buffet, food truck, tea room, brasserie, milk parlour, beverages parlour, food court, bread and cake, organic food, fresh fruits, meat, chocolate rooms, ice cream corner, dairy farm, eatery and small food joints, restaurants Its minimalist design will let your website load faster as it will keep your visitors' interest alive. Footer menu has typography options so users can change font size, font family, letter margin, letter spacing etc. CTAs and contact forms make your website more interactive and enable your clients and audience to connect to you easily. An intuitive admin panel provides you with a lot of customization options using which you can hammer out a beautiful website without writing any code. The stunning CSS animations will add new life to your site and make it lively. This modern theme has a retina ready design which makes the content and images of your site look vibrant and perfect. Extend the reach of your business far and wide by using the social media icons for promotion. Cafe Coffee Shop optimized codes and has many other useful features such as WPML compatibility that makes it translation ready, SEO optimization, built-in shortcodes, Footer Widgets, Featured Images, and much more. Check Demo: https://www.vwthemes.net/vw-cafe/
+Requires at least: 5.0
+Template: vw-bakery
+Tested up to: 6.1
+Requires PHP: 7.2
+Version: 1.7.7
+License: GPLv3.0 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: cafe-coffee-shop
+Tags: left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-columns, grid-layout, wide-blocks, block-styles, flexible-header, block-patterns, custom-colors, custom-background, custom-logo, custom-menu, custom-header, editor-style, featured-images, footer-widgets, sticky-post, full-width-template, theme-options, translation-ready, threaded-comments, post-formats, rtl-language-support, blog, portfolio, food-and-drink
+*/
+
+/*------- DEFAULT CSS --------*/
+
+body{
+	font-family: 'Poppins', sans-serif !important;
+	color: #6c6c6c !important;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Playfair Display', sans-serif !important;
+  color: #000000 !important;
+  font-weight: bold;
+}
+a{
+	color: #222222;
+  text-decoration: none !important;
+}
+select{
+    outline: none;
+    border-bottom: none;
+}
+
+/*------- COMMON CSS COLOR--------*/
+
+.post-main-box h2 a,
+#footer .tagcloud a:hover,
+.main-navigation ul ul a,
+.copyright a:hover{
+  color: #311f15;
+}
+.post-main-box:hover h2 a, 
+.post-main-box:hover a,
+.main-navigation a:hover,
+#footer li a:hover,
+a.rsswidget,
+.main-navigation ul.sub-menu a:hover, 
+.woocommerce ul.products li.product .price, 
+.woocommerce div.product p.price, .woocommerce div.product span.price,
+.product_meta a,
+span.tagged_as a,
+#sidebar a.custom_read_more:hover, #sidebar ul li a:hover, .single-post .post-info:hover .entry-date a, .single-post .post-info:hover .entry-author a{
+  color: #b89d64;
+}
+.post-info hr,
+.main-navigation ul ul{
+    border-color: #311f15;
+}
+#comments input[type="submit"].submit,
+#sidebar input[type="submit"],
+.pagination .current,
+.pagination a:hover,
+#comments a.comment-reply-link,
+#sidebar .tagcloud a:hover,
+nav.woocommerce-MyAccount-navigation ul li,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button, 
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce span.onsale,
+input[type="submit"], #sidebar .woocommerce-product-search button{
+  background: #311f15;
+  opacity: 1 !important;
+  color: #ffffff !important;
+}
+.pagination span, .pagination a,
+#footer input[type="submit"],
+#comments a.comment-reply-link:hover,
+.woocommerce #respond input#submit:hover, 
+.woocommerce a.button:hover, 
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover, 
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover,
+.products li:hover span.onsale,
+.carousel-control-prev-icon i:hover,
+.carousel-control-next-icon i:hover,#footer-2,
+#sidebar .custom-social-icons i:hover,
+#footer .custom-social-icons i:hover, #sidebar .woocommerce-product-search button:hover{
+    background: #b89d64 !important;
+}
+.scrollup i{
+  background: #b89d64;
+}
+a:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="phno"]:focus,
+input[type="password"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+textarea:focus, 
+input[type="submit"]:focus, 
+#comments:focus, 
+button:focus, button.close:focus, select:focus,
+.search-box button:focus,.serach_inner input.search-field:focus,
+.serach_inner input.search-submit:focus, 
+a:focus span{
+  outline: 1px solid #000 !important;
+  text-decoration: none !important;
+}
+.serach_inner input.search-field:focus, .serach_inner input.search-submit:focus, .closepop a:focus, #footer a:focus, .site-logo a:focus, .search-box a:focus, .main-navigation a:focus, #footer li a:focus, #slider .inner_carousel h1 a:focus, .copyright a:focus{
+  outline: 1px solid #fff !important;
+  text-decoration:none !important;
+}
+.woocommerce-product-details__short-description p a, .textwidget p a, .entry-content a, .sidebar p a, #comments p a, .comment-meta.commentmetadata a{
+  color: #b89d64 !important;
+  text-decoration: underline;
+}
+/*------- LOGO CSS --------*/
+
+.logo{
+  position: static;
+  padding: 0;
+}
+.logo h1, .logo p.site-title a {
+  margin-bottom: 0;
+}
+.logo img {
+  max-height: unset;
+  width: auto;
+  padding: 0;
+}
+.logo h1 a, 
+.logo p.site-title a,#header,
+.copyright a, .copyright p,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.more-btn a,
+.page-content .read-moresec a.error-btn{
+  font-family: 'Playfair Display', sans-serif !important;
+}
+.logo .site-title a:hover{
+  color: #b89d64;
+}
+/*------- HEADER CSS --------*/
+
+.admin-bar #header {
+  margin-top: 32px;
+}
+#header{
+  background: #311f15;
+}
+#heade-top {
+  padding: 30px 0;
+}
+.left-box {
+  text-align: right;
+}
+#heade-top i {
+  font-size: 40px;
+  color: #b89d64;
+}
+.left-box p, .left-box p a, .right-box p, .right-box p a {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 16px;
+}
+.left-box p a:hover, .right-box p a:hover {
+  color: #b89d64;
+}
+.page-template-custom-home-page #header, .page-template-ibtana-page-template #header{
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  background: transparent;
+}
+.page-template-ibtana-page-template .middle-align{
+  padding: 0em 0 0;
+}
+.page-template-ibtana-page-template #maincontent:before {
+  display: none;
+}
+/*------- MENUS CSS --------*/
+
+#mySidenav {
+  display: block;
+}
+.page-template-custom-home-page .nav-header, .page-template-ibtana-page-template .nav-header {
+  border-bottom: solid 1px #fff;
+}
+.main-navigation ul {
+  margin: 0;
+  text-align: center;
+}
+.main-navigation a {
+  color: #fff;
+  font-size: 13px;
+  padding: 7px 15px;
+  letter-spacing: 2px;
+}
+.main-navigation ul li:hover > ul {
+  padding: 0;
+}
+.nav-header {
+  padding: 20px 0;
+  border-top: solid 1px #fff;
+}
+.main-navigation ul ul{
+  top: 100%;
+}
+.search-box i{
+  padding: 8px 0;
+  color: #fff;
+}
+.close{
+  color: #fff !important;
+}
+.modal-dialog{
+  margin: 0 !important;
+  pointer-events: all !important;
+  max-width: 100% !important;
+}
+.serach_inner{
+  margin: 0 auto;
+}
+.modal-body{
+  width: 100%;
+}
+.modal-open .modal,
+.modal-open{
+  padding: 0 !important;
+}
+.modal-backdrop{
+  z-index: 99 !important;
+}
+/*----------------- SEARCH POPUP ----------------*/
+.serach_inner label {
+  width: 80% !important;
+}
+.serach_outer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.8);
+  display: none;
+}
+.serach_inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.closepop {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  width: 100%;
+  right: 0;
+  text-align: right;
+  margin-right: 28px;
+}
+.serach_outer i {
+  font-size: 24px;
+  padding: 4px 0 0 0;
+  color: #bbb;
+  cursor: pointer;
+}
+.serach_inner form.search-form {
+ display: table;
+ padding: 0;
+ border-radius: 0;
+ border-bottom: solid 1px #999; 
+ margin: 0 auto;
+ max-width: 700px;
+ width: 100%;
+}
+.serach_inner input.search-submit {
+  padding: 10px 25px;
+  background: url(images/search.png) no-repeat scroll 0 8px;
+  font-size: 13px;
+  text-align: center;
+  float: right;
+  text-indent: -9999px;
+  border: none;
+  margin-top: 0px;
+}
+.serach-page input.search-field {
+  border: 1px solid #ccc;
+  padding: 9px;
+}
+button.search-submit {
+  border: 0;
+  background: transparent;
+}
+.serach_inner input.search-field {
+  border: none;
+  padding: 4px 0;
+  background: transparent;
+  width: 100%;
+  font-size: 20px;
+  font-style: italic;
+  color: #999;
+  margin: 0;
+}
+.serach_inner input[type="submit"]:hover{
+  background: url(images/search.png) no-repeat scroll 0 8px;
+}
+.search-box i {
+  padding: 8px 0;
+  color: #fff;
+}
+/*------- SLIDER CSS --------*/
+
+.carousel-inner:before{
+  content: none;
+}
+#slider {
+  background: #000;
+}
+#slider .inner_carousel{
+  border: none;
+}
+#slider .inner-carousel-conetnt,
+#slider .inner_carousel{
+  position: static;
+}
+#slider .inner_carousel h1 a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
+}
+#slider .inner_carousel h1 a:hover {
+  color: #b89d64;
+}
+#slider .inner_carousel h1{
+  text-align: unset;
+}
+#slider .carousel-caption {
+  top: 55%;
+}
+#slider .carousel-control-prev-icon, 
+#slider .carousel-control-next-icon{
+  font-size: 18px;
+}
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+  border: solid 1px #fff;
+  padding: 12px 15px;
+}
+
+/*------- ABOUT US CSS --------*/
+
+#about-section {
+  padding: 3% 0 0;
+}
+#about-section strong {
+  font-size: 15px;
+  letter-spacing: 10px;
+  color: #999999;
+}
+#about-section h2, h2.bake-sec-title  {
+  text-align: left;
+  text-transform: none;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 15px 0px;
+}
+#about-section p {
+  font-size: 15px;
+  line-height: 2;
+  color: #999;
+}
+.more-btn a,
+.page-content .read-moresec a.error-btn {
+  border: solid 2px;
+  padding: 15px 15px;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.more-btn a:hover,
+.page-content .read-moresec a.error-btn:hover{
+  background: #b89d64;
+  border-color: #b89d64;
+  color: #fff;
+}
+.more-btn,
+.page-content .read-moresec a.error-btn{
+  margin: 30px 0;
+}
+.page-content{
+  margin: 20px 0px 40px 0px;
+}
+.page-content p{
+  margin: 0 0 30px 0;
+}
+/*------- POST CSS --------*/
+.post-main-box h2 a{
+  font-size: 25px;
+}
+a.content-bttn {
+  font-size: 15px;
+  border-bottom: solid 1px;
+  color: #311f15;
+}
+#sidebar .custom-social-icons i{
+  background: #311f15;
+  color: #fff;
+  border: none;
+}
+#sidebar .custom-social-icons i, #footer .custom-social-icons i{
+  padding: 6px;
+}
+#sidebar .custom_details {
+  color: #222;
+}
+#sidebar .wp-block-search .wp-block-search__label{
+  font-family: 'Playfair Display', sans-serif !important;
+}
+.nav-previous a{
+  padding: 15px 15px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 13px;
+  font-weight: bold;
+  text-align: left;
+  background: #b89d64;
+}
+.nav-next a{
+  padding: 15px 15px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 13px;
+  font-weight: bold;
+  text-align: right;
+  background: #b89d64;
+}
+.nav-previous a:hover, .nav-next a:hover {
+  background: #311f15;
+  color: #fff;
+  transition-duration: 0.5s;
+}
+.entry-date a, .entry-author a, .single-post .post-info {
+  color: #000;
+}
+#sidebar .custom-about-us{
+  text-align: center;
+}
+.bradcrumbs a:hover, .bradcrumbs span, .post-categories li a ,.post-categories li a:hover{
+  background: #b89d64;
+}
+
+/*------- WOOCOMMERCE CSS --------*/
+
+#bakery-product .woocommerce ul.products li.product, 
+#bakery-product .woocommerce-page ul.products li.product{
+  width: 22%;
+}
+#bakery-product .woocommerce ul.products li.product a img{
+  margin: 10px 0 10px 0;
+}
+#bakery-product .woocommerce ul.products li.product .button, a.checkout-button.button.alt.wc-forward{
+  margin: 5px 0 10px 0;
+}
+h2.bake-sec-title {
+  margin-bottom: 35px;
+}
+.related.products h2 {
+  font-weight: bold;
+  text-transform: none;
+}
+.woocommerce input#password{
+  border: 1px solid #bcbcbc;
+  padding: 10px;
+}
+.woocommerce-page form .password-input{
+  width: 100%;
+}
+.woocommerce label {
+  width: 100%;
+}
+.woocommerce nav.woocommerce-pagination ul li a {
+  display: block;
+  margin: 2px 2px 2px 0;
+  padding: 12px 15px;
+  text-decoration: none;
+  width: auto;
+  color: #fff;
+  background: #b89d64;
+  transition: background .15s ease-in-out;
+  font-weight: bold;
+}
+.woocommerce nav.woocommerce-pagination ul li a:hover{
+  background: #311f15;
+  color: #fff;
+}
+.woocommerce nav.woocommerce-pagination ul li span.current{
+  padding: 12px 15px;
+  background: #311f15;
+  color: #fff;
+  font-weight: normal;
+}
+.woocommerce nav.woocommerce-pagination ul, .woocommerce nav.woocommerce-pagination ul li{
+  border: none;
+  float: none;
+  overflow: unset;
+}
+.woocommerce nav.woocommerce-pagination {
+  text-align: center;
+  margin-bottom: 20px;
+} 
+.woocommerce-cart table.cart td.actions .coupon .input-text{
+  width: 110px !important;
+  padding: 5px 5px 5px !important;
+  margin: 0px 10px 0px 0 !important;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation {
+  margin-bottom: 30px;
+}
+nav.woocommerce-MyAccount-navigation ul li a {
+    color: #fff !important;
+    font-weight: bold;
+}
+nav.woocommerce-MyAccount-navigation ul li a:hover {
+    color: #b89d64 !important;
+} 
+.woocommerce div.product .product_title{
+  font-size: 30px !important;
+}
+.woocommerce ul.products li.product a img{
+  margin: 0;
+}
+.woocommerce-product-gallery__image {
+  padding: 5px;
+}
+h3#order_review_heading{
+  padding: 20px 0 10px 0;
+}
+button.single_add_to_cart_button.button.alt{
+  font-size: 16px;
+}
+.woocommerce span.onsale{
+  padding: 0px 10px;
+}
+/*------- FOOTER CSS --------*/
+#footer .custom-about-us{
+  text-align: left;
+}
+#footer{
+  background: #222222;
+}
+#footer h3, #footer .wp-block-search .wp-block-search__label{
+  color: #fff !important;
+  font-family: 'Playfair Display', sans-serif !important;
+}
+#footer .custom-social-icons i{
+  border: 1px solid #b89d64;
+  color: #b89d64;
+}
+#footer .custom-social-icons i:hover{
+  background: #b89d64;
+  color: #fff;
+  border-color: #b89d64;
+}
+#footer .custom_details {
+  color: #fff;
+}
+#footer a.custom_read_more{
+  color: #b89d64;
+}
+#footer .wp-block-search .wp-block-search__button, #sidebar .wp-block-search .wp-block-search__button{
+  background: #b89d64;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 2px;
+  width: 100%;
+  margin-left: 0;
+}
+/*----------- PRELOADER ----------*/
+#preloader {
+  background-color: #b89d64;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999999;
+  height: 100%;
+}
+.loader-inner {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+.loader-line-wrap {
+  animation: spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite;
+  box-sizing: border-box;
+  height: 50px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform-origin: 50% 100%;
+  width: 100px;
+}
+.loader-line {
+  border: 4px solid #ffffff;
+  border-radius: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+  height: 90px;
+  width: 90px;
+  top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+  height: 76px;
+  width: 76px;
+  top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+  height: 62px;
+  width: 62px;
+  top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+  height: 48px;
+  width: 48px;
+  top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+  height: 34px;
+  width: 34px;
+  top: 35px;
+}
+@keyframes spin {
+  0%, 15% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.elementor-page #preloader{
+  display: none;
+}
+/*------- MEDIA CSS --------*/
+
+@media screen and (max-width:720px) {
+  .logo {
+    padding: 10px 0;
+  }
+  #heade-top .phone {
+    text-align: left;
+  }
+  #heade-top .email {
+    text-align: right;
+  }
+  .toggle-nav {
+    background: #b89d64;
+  }
+  .page-template-custom-home-page #header,
+  .page-template-ibtana-page-template #header{
+    position: static;
+    background: #311f15;
+  }
+  #slider .carousel-caption {
+    bottom: 0;
+    padding:0;
+    top: 50%;
+  }
+  #slider .inner_carousel h1 {
+    display: block;
+    padding: 0;
+    margin-top: 0;
+  }
+  #slider .inner_carousel h1 a {
+    font-size: 25px;
+  }
+  #bakery-product .woocommerce ul.products li.product,
+  #bakery-product .woocommerce-page ul.products li.product {
+    width: 100%;
+  }
+  .search-box {
+    background: #b89d64;
+    padding: 9px;
+  }
+  .serach_inner form.search-form{
+    max-width: 250px;
+  }
+  .serach_inner label {
+    width: 80%;
+  }
+  .page-template-custom-home-page .nav-header, 
+  .page-template-ibtana-page-template .nav-header{
+    border: none;
+  }
+}
+@media screen and ( max-width: 788px ) and ( min-width: 768px ) {
+  .logo img, .logo, .logo_outer_box{
+    background: transparent;
+  }
+  #bakery-product .woocommerce ul.products li.product,
+  #bakery-product .woocommerce-page ul.products li.product{
+    width: auto;
+  }
+  #slider .carousel-control-prev, #slider .carousel-control-next {
+    bottom: -100px;
+  }
+  #slider .inner_carousel h1 a{
+    font-size: 45px;
+  }
+  #slider .carousel-caption {
+    transform: translateY(-35%);
+  }
+  #heade-top {
+    padding: 10px 0;
+  }
+  .serach_inner form.search-form{
+    max-width: 500px;
+  }
+  .serach_inner label {
+    width: 80%;
+  }
+  body.admin-bar #mySidenav{
+    margin-top: 40px !important;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .main-menu {
+    padding: 0em;
+    padding-top: 50px;
+  }   
+  .nav-header{
+    padding: 0;
+    border: 0;
+  }
+  .toggle-nav i,
+  .logo h1 a, .logo p.site-title a, 
+  p.site-description{
+    color: #fff;
+  }
+  .main-navigation ul{
+    top: 0;
+  }
+  #slider .inner-carousel-conetnt {
+    background: transparent;
+    padding: 0;
+  }  
+  .main-navigation a:focus{
+    outline-color: #000 !important
+  } 
+  #slider img {
+    height:auto !important;
+  }
+}
+
+@media screen and ( max-width: 1024px ) and ( min-width: 788px ) {
+  .logo img, .logo, .logo_outer_box,
+  #slider .inner-carousel-conetnt{
+    background: transparent;
+  }
+  #slider .carousel-caption {
+    transform: translateY(-30%);
+  }
+}
